@@ -1,0 +1,71 @@
+.background {
+    background-image: url(./imagens/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: 27px;
+width: 30%;
+min-height: 250px;
+margin-bottom: 40px;
+display: flex;
+}
+
+.card-holder {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.imagem {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conteudo {
+    padding: 20px;
+}
+
+.conteudo li {
+    font-size: 18px;
+}
+
+#harry {
+    background-image: url(./imagens/harry.png);
+   
+}
+
+#ron {
+    background-image: url(./imagens/ron.png);
+    
+}
+
+#hermione {
+    background-image: url(./imagens/hermione.png);
+}
+
+#dumbledorer {
+    background-image: url(./imagens/dumbledore.png);
+}
+
+#lord {
+    background-image: url(./imagens/lord.png);
+}
+
+#lord img {
+    width: 40px;
+}
+
+#hagrid {
+    background-image: url(./imagens/hagrid.png);
+}
