@@ -1,0 +1,70 @@
+.apresentacao {
+    font-weight: bold;
+    width: 50%;
+}
+
+.apresentacao__titulo {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.apresentacao__texto {
+    font-size: 1.5rem;
+}
+
+.hiperlink {
+    color: #777CEC;
+}
+
+.containerCards {
+    width: 100%;
+    display: grid;
+    row-gap: 2rem;
+    grid-template-areas: 
+    "card1 card1 ."
+    ". card2 card2"
+    "card3 card3 ."
+    ;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.cardApresentacao {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "imagem titulo"
+    "imagem texto"
+    "imagem btn"
+    ;
+    background-color: #ffffffcc;
+    border-radius: 40px;
+}
+
+.cardApresentacao__imagem {
+    grid-area: imagem;
+}
+
+.cardApresentacao__titulo {
+    grid-area: titulo;
+}
+
+.cardApresentacao__texto {
+    grid-area: texto;
+}
+
+.cardApresentacao_btn {
+    grid-area: btn;
+    background-color: #777CEC;
+    font-weight: bold;
+}

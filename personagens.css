@@ -11,6 +11,7 @@ width: 30%;
 min-height: 250px;
 margin-bottom: 40px;
 display: flex;
+color: black;
 }
 
 .card-holder {

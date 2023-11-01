@@ -3,53 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Home - Potter Page</title>
 </head>
 <body>
     
     <nav class="nav">
-        <img src="./images/logo" alt="Logo do site" class="nav__logo">
+        <img src="./imagens/logo.png" alt="Logo do site" class="nav__logo">
         <ul class="nav__lista">
-            <li class="nav__item"><a href="./index.html">Home</a></li>
-            <li class="nav__item"><a href="./personagens.html">Personagens</a></li>
-            <li class="nav__item"><a href="./casas.html">Casas</a></li>
-            <li class="nav__item"><a href="./feiticos.html">Feitiços</a></li>
-            <li class="nav__item"><a href="./loja.html">Loja virtual</a></li>
-            <li class="nav__item"><a href="./cadastro.html">Cadastro</a></li>
+            <li><a class="nav__item" href="./index.html">Home</a></li>
+            <li><a class="nav__item" href="./personagens.html">Personagens</a></li>
+            <li><a class="nav__item" href="./casas.html">Casas</a></li>
+            <li><a class="nav__item" href="./feiticos.html">Feitiços</a></li>
+            <li><a class="nav__item" href="./loja.html">Loja virtual</a></li>
+            <li><a class="nav__item" href="./cadastro.html">Cadastro</a></li>
         </ul>
-        <img src="./images/imagem_perfil" alt="">
+
+        <li><img src="./imagens/imagem_perfil.png" alt=""></li>
+        
     </nav>
 
     <section class="apresentacao">
         <h2 class="apresentacao__titulo">Tudo sobre o mundo da magia me um só lugar!</h2>
-        <p class="apresentacao__texto">Aqui você tem acesso a tudo sobre o mundo de Harry Potter, desde curiosidades até nossa <a href="./loja.html">lojinha virtual!</a></p>
+        <p class="apresentacao__texto">Aqui você tem acesso a tudo sobre o mundo de Harry Potter, desde curiosidades até nossa <a class="hiperlink" href="./loja.html">lojinha virtual</a>!</p>
     </section>
 
-    <div class="cardApresentacao">
-        <img src="./images/apresentacaoPersonagens" alt="Imagem mostrando os personagens do filme Harry Potter">
 
-        <h3 class="cardApresentacao__titulo">Personagens</h3>
-        <p class="cardApresentacao__texto">Relembre dos personagens da saga e de suas principais características!</p>
+    <div class="containerCards">
+        <div class="cardApresentacao card1">
+            <img class="cardApresentacao__imagem" src="./imagens/personagens.png" alt="Imagem mostrando os personagens do filme Harry Potter">
 
-        <a href="./personagens.html" class="btn">Personagens</a>
-    </div>
+            <h3 class="cardApresentacao__titulo">Personagens</h3>
+            <p class="cardApresentacao__texto">Relembre dos personagens da saga e de suas principais características!</p>
 
-    <div class="cardApresentacao">
-        <img src="./images/casas" alt="Imagem dos escudos das casas de Hogwarts">
+            <a href="./personagens.html" class="cardApresentacao__btn">Personagens</a>
+        </div>
 
-        <h3 class="cardApresentacao__titulo">Casas</h3>
-        <p class="cardApresentacao__texto">Para qual casa você seria mandado? Veja aqui tudo sobre as quatro casas de Hogwarts.</p>
+        <div class="cardApresentacao card2">
+            <img class="cardApresentacao__imagem" src="./imagens/casas.png" alt="Imagem dos escudos das casas de Hogwarts">
 
-        <a href="./personagens.html" class="btn">Personagens</a>
-    </div>
+            <h3 class="cardApresentacao__titulo">Casas</h3>
+            <p class="cardApresentacao__texto">Para qual casa você seria mandado? Veja aqui tudo sobre as quatro casas de Hogwarts.</p>
 
-    <div class="cardApresentacao">
-        <img src="./images/feiticos" alt="Imagem do Harry lançando um feitiço">
+            <a href="./personagens.html" class="cardApresentacao__btn">Casas</a>
+        </div>
 
-        <h3 class="cardApresentacao__titulo">Feitiços</h3>
-        <p class="cardApresentacao__texto">Descubra tudo sobre defesa contra artes das trevas na nossa página de feitiços!</p>
+        <div class="cardApresentacao card3">
+            <img class="cardApresentacao__imagem" src="./imagens/feiticos.png" alt="Imagem do Harry lançando um feitiço">
 
-        <a href="./personagens.html" class="btn">Personagens</a>
+            <h3 class="cardApresentacao__titulo">Feitiços</h3>
+            <p class="cardApresentacao__texto">Descubra tudo sobre defesa contra artes das trevas na nossa página de feitiços!</p>
+
+            <a href="./personagens.html" class="cardApresentacao__btn">Feitiços</a>
+        </div>
     </div>
 
     <footer class="footer">
