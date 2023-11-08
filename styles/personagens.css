@@ -1,5 +1,5 @@
 .background {
-    background-image: url(/projetofinal/imagens/background.jpg);
+    background-image: url("../imagens/background.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -49,25 +49,25 @@ margin-top: 50px;
 }
 
 #harry {
-    background-image: url(/projetofinal/imagens/harry.png);
+    background-image: url("../imagens/harry.png");
    
 }
 
 #ron {
-    background-image: url(/projetofinal/imagens/ron.png);
+    background-image: url("../imagens/ron.png");
     
 }
 
 #hermione {
-    background-image: url(/projetofinal/imagens/hermione.png);
+    background-image: url("../imagens/hermione.png");
 }
 
 #dumbledorer {
-    background-image: url(/projetofinal/imagens/dumbledore.png);
+    background-image: url("../imagens/dumbledore.png");
 }
 
 #lord {
-    background-image: url(/projetofinal/imagens/lord.png);
+    background-image: url("../imagens/lord.png");
 }
 
 #lord img {
@@ -75,5 +75,5 @@ margin-top: 50px;
 }
 
 #hagrid {
-    background-image: url(/projetofinal/imagens/hagrid.png);
+    background-image: url("../imagens/hagrid.png");
 }
