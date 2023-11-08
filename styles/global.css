@@ -34,8 +34,9 @@ body {
     color: #fefefe;
 }
 
-
-.footer__texto {
+.footer {
+    background-color: transparent;
+    color: #fff;
     text-align: center;
-    font-weight: bolder;
-}
+    padding: 100px;
+  }

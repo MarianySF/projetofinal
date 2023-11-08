@@ -10,7 +10,6 @@ form {
   }
   
   input[type="email"],
-  input[type="text"],
   input[type="password"] {
     width: 100%;
     padding: 12px 20px;
@@ -54,6 +53,24 @@ form {
   }
 
   a {
+    display: block;
+    text-align: center;
+    color: #fff;
+  }
+
+  p {
+    display: block;
+    text-align: center;
+    color: #fff;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+    color: #fff;
+  }
+
+  span {
     display: block;
     text-align: center;
     color: #fff;
