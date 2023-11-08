@@ -33,3 +33,9 @@ body {
     background-color: #666666;
     color: #fefefe;
 }
+
+
+.footer__texto {
+    text-align: center;
+    font-weight: bolder;
+}
