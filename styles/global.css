@@ -33,3 +33,10 @@ body {
     background-color: #666666;
     color: #fefefe;
 }
+
+.footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+  }
