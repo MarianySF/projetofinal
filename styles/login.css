@@ -61,7 +61,7 @@ form {
     text-align: center;
   }
 
-  a {
+.formLogin__hiperlink {
     display: block;
     text-align: center;
     color: #fff;
