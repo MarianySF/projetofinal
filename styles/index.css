@@ -49,22 +49,39 @@
     ;
     background-color: #ffffffcc;
     border-radius: 40px;
+    color: #000000;
 }
 
 .cardApresentacao__imagem {
     grid-area: imagem;
+    width: 469px;
+    height: 252px;
 }
 
 .cardApresentacao__titulo {
     grid-area: titulo;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
 }
 
 .cardApresentacao__texto {
     grid-area: texto;
+    font-size: 1rem;
+    margin: 0 2rem ;
 }
 
-.cardApresentacao_btn {
+.cardApresentacao__btn {
     grid-area: btn;
+    justify-self: center;
+    align-self: center;
+    padding: 0.5rem 1.5rem;
+    width: 8rem;
+    border-radius: 60px;
     background-color: #777CEC;
     font-weight: bold;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
 }
