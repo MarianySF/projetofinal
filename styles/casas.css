@@ -1,0 +1,46 @@
+.titulo, .breadcrumb {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.breadcrumb {
+    display: block;
+}
+
+.container-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 2rem;
+    box-sizing: content-box;
+}
+
+.card {
+    width: 22%;
+    border-radius: 40px;
+    background-color: #ffffffcc;
+    color: #000000;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:nth-child(even) {
+    position: relative;
+    top: 8rem;
+}
+
+.card__titulo {
+    text-align: center;
+}
+
+.card__texto {
+    text-align: justify;
+}
+
+.footer {
+    position: relative;
+    top: 50px;
+}

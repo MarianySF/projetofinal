@@ -85,3 +85,7 @@
     text-decoration: none;
     text-align: center;
 }
+
+.cardApresentacao__btn:hover {
+    background-color: #9094db;
+}
