@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1D1D1D; /* Cor de fundo inspirada no universo Harry Potter */
+    color: #FFFFFF; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #D3A625; /* Cor do título inspirada na casa Lufa-Lufa */
+}
+
+#searchInput {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #3C3B6E; /* Cor do botão inspirada na casa Corvinal */
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #726A9E; /* Cor do botão ao passar o mouse inspirada na casa Corvinal */
+}
+
+#characterDetails {
+    margin-top: 20px;
+}
