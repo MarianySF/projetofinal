@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/buscadorapi.css">
+    <title>Harry Potter API Search</title>
+</head>
+<body>
+
+    <nav class="nav">
+        <img src="./imagens/logo.png" alt="Logo do site" class="nav__logo">
+        <ul class="nav__lista">
+            <li><a class="nav__item" href="./index.html">Home</a></li>
+            <li><a class="nav__item" href="./personagens.html">Personagens</a></li>
+            <li><a class="nav__item" href="./casas.html">Casas</a></li>
+            <li><a class="nav__item" href="./feiticos.html">Feitiços</a></li>
+            <li><a class="nav__item" href="./loja.html">Loja virtual</a></li>
+            <li><a class="nav__item" href="./cadastro.html">Cadastro</a></li>
+            <li><a class="nav__item" href="./buscadorapi.html">Buscar Personagem</a></li>
+        </ul>
+
+        <li><img src="./imagens/imagem_perfil.png" alt=""></li>
+        
+    </nav>
+
+    <h1>Encontre seu personagem favorito</h1>
+    <input type="text" id="searchInput" placeholder="Buscar personagem">
+    <button onclick="searchCharacter()">Buscar</button>
+    <div id="characterDetails"></div>
+
+    <script>
+        async function searchCharacter() {
+            const searchInput = document.getElementById('searchInput').value;
+
+            // Limpar detalhes anteriores
+            document.getElementById('characterDetails').innerHTML = '';
+
+            try {
+                // Consultar a API usando fetch
+                const response = await fetch(`https://hp-api.onrender.com/api/characters`);
+                const characters = await response.json();
+
+                // Filtrar personagens que correspondem à pesquisa
+                const matchingCharacters = characters.filter(character =>
+                    character.name.toLowerCase().includes(searchInput.toLowerCase())
+                );
+
+                // Verificar se a pesquisa retornou resultados
+                if (matchingCharacters.length > 0) {
+                    // Exibir detalhes dos personagens encontrados
+                    matchingCharacters.forEach(character => {
+                        const characterDetails = `
+                            <h2>${character.name}</h2>
+                            <p>House: ${character.house}</p>
+                            <p>Species: ${character.species}</p>
+                            <img src="${character.image}" alt="${character.name}">
+                        `;
+                        document.getElementById('characterDetails').innerHTML += characterDetails;
+                    });
+                } else {
+                    // Se não houver resultados
+                    document.getElementById('characterDetails').innerHTML = '<p>Nenhum resultado encontrado.</p>';
+                }
+            } catch (error) {
+                console.error('Erro ao buscar personagem:', error);
+                document.getElementById('characterDetails').innerHTML = '<p>Erro ao buscar personagem.</p>';
+            }
+        }
+    </script>
+</body>
+</html>
