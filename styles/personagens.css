@@ -71,3 +71,7 @@ margin-top: 50px;
 #hagrid {
     background-image: url("../imagens/hagrid.png");
 }
+
+.escudo {
+    width: 40px;
+}
