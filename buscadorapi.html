@@ -36,22 +36,22 @@
         async function searchCharacter() {
             const searchInput = document.getElementById('searchInput').value;
 
-            // Limpar detalhes anteriores
+            
             document.getElementById('characterDetails').innerHTML = '';
 
             try {
-                // Consultar a API usando fetch
+                
                 const response = await fetch(`https://hp-api.onrender.com/api/characters`);
                 const characters = await response.json();
 
-                // Filtrar personagens que correspondem à pesquisa
+                
                 const matchingCharacters = characters.filter(character =>
                     character.name.toLowerCase().includes(searchInput.toLowerCase())
                 );
 
-                // Verificar se a pesquisa retornou resultados
+                
                 if (matchingCharacters.length > 0) {
-                    // Exibir detalhes dos personagens encontrados
+                    
                     matchingCharacters.forEach(character => {
                         const characterDetails = `
                             <h2>${character.name}</h2>
@@ -62,7 +62,7 @@
                         document.getElementById('characterDetails').innerHTML += characterDetails;
                     });
                 } else {
-                    // Se não houver resultados
+                    
                     document.getElementById('characterDetails').innerHTML = '<p>Nenhum resultado encontrado.</p>';
                 }
             } catch (error) {
