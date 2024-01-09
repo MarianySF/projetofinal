@@ -1,17 +1,3 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #1D1D1D;
-    background-image: url("../imagens/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
-    color: #FFFFFF;
-    margin: 0 2rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 h1 {
     color: #D3A625;
 }
